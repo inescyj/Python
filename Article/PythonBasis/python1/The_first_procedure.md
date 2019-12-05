@@ -26,3 +26,13 @@
 
 ![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-08-17-080018.jpg)
 
+使用sublime text 3 配置python3环境
+1. 打开 Tools > Build System > New Build System
+2. 输入
+"encoding": "utf-8",  
+"working_dir": "$file_path",  
+"shell_cmd": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python35-32\\python.exe -u \"$file\"",  
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",  
+"selector": "source.python" 
+3. 然后 Ctrl + S 直接保存为想要命名的编译名称（如：python352）
+4. build system选择 python 352 即可
